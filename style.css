@@ -655,44 +655,48 @@ button {
     }
     /* Proyecto Section Mobile */
     .proyecto-section {
-        padding: 30px 5% 60px 5%;
+        padding: 40px 6% 50px 6%;
     }
     .proyecto-container {
-        gap: 40px;
+        gap: 30px;
     }
     .proyecto-top-row {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 0;
     }
     .proyecto-left-info {
         order: 1;
-        gap: 15px;
+        gap: 20px;
+        padding-bottom: 30px;
     }
     .proyecto-right-img {
         order: 2;
         width: 100% !important;
         height: auto !important;
+        aspect-ratio: 16 / 9;
         border-radius: 16px !important;
         box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
         overflow: hidden;
     }
     .image-wrapper {
         width: 100% !important;
-        height: auto !important;
+        height: 100% !important;
         display: block;
     }
     .main-project-image {
         width: 100% !important;
-        height: auto !important;
+        height: 100% !important;
         display: block;
         object-fit: cover;
     }
     .proyecto-main-title {
-        font-size: 36px !important;
+        font-size: 38px !important;
+        margin-bottom: 5px;
     }
     .proyecto-sm-text {
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 1.7;
         max-width: 100%;
     }
     .proyecto-large-quote {
