@@ -1028,7 +1028,7 @@ button {
 .highlight-saggita {
     font-family: var(--font-main) !important;
     font-weight: 700 !important;
-    color: #0082BA !important;
+    color: #1C3775 !important;
 }
 
 .proyecto-sm-text .fw-light {
@@ -1063,8 +1063,10 @@ button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 15px;
     font-size: 12px;
+    transition: var(--transition);
+    color: #FFFFFF !important;
 }
 
 /* Image Column */
