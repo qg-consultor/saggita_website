@@ -171,8 +171,8 @@ button {
 }
 
 .hero-sidebar .nav-links a:hover {
-    background: #F8F3E8;
-    color: #96B563;
+    background: #0082BA;
+    color: #FFFFFF;
     transform: translateX(6px);
 }
 
