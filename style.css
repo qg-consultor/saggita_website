@@ -16,7 +16,7 @@
     --color-texto-principal: #354E3C;
     --color-texto-secundario: #D5DCCE;
     --color-primario: #354E3C; 
-    --color-primario-hover: #96B563; 
+    --color-primario-hover: #0082BA; 
     
     /* --- COLORES DEL MAPA (Adaptados a Pamyra) --- */
     --mapa-seleccionado: #354E3C;
@@ -243,7 +243,7 @@ button {
     padding-right: 20px;
     padding-left: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    background: #0A231D;
+    background: #0082BA;
     color: #FFFFFF;
 }
 
@@ -399,7 +399,7 @@ button {
 
 .btn-main-cta:hover {
     transform: translateY(-5px);
-    background: #0A231D;
+    background: #0082BA;
     color: #FFFFFF;
     box-shadow: 0 20px 45px rgba(0,0,0,0.3);
 }
@@ -1043,9 +1043,9 @@ button {
 }
 
 .btn-dark:hover {
-    background: #0A231D;
+    background: #0082BA;
     color: #F8F3E8;
-    box-shadow: 0 10px 20px rgba(10, 35, 29, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 130, 186, 0.3);
 }
 
 .btn-dark .icon-arrow {
@@ -1297,9 +1297,9 @@ button {
 }
 
 .btn-light-outline:hover {
-    background: var(--color-text);
-    color: var(--color-secundario);
-    border-color: var(--color-text);
+    background: #0082BA;
+    color: #FFFFFF;
+    border-color: #0082BA;
 }
 
 .btn-light {
@@ -1319,8 +1319,8 @@ button {
 }
 
 .btn-light:hover {
-    background: var(--color-text);
-    color: var(--color-secundario);
+    background: #0082BA;
+    color: #FFFFFF;
 }
 
 .btn-light .icon-arrow {
@@ -1338,8 +1338,8 @@ button {
 }
 
 .btn-light:hover .icon-arrow {
-    background: var(--color-secundario);
-    color: var(--color-text);
+    background: #FFFFFF;
+    color: #0082BA;
 }
 
 /* Galería de Prototipos */
@@ -1916,7 +1916,7 @@ button {
 .btn-submit-glass:hover {
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     transform: translateY(-4px);
-    background: #0A231D;
+    background: #0082BA;
     color: #FFFFFF;
 }
 
@@ -2032,7 +2032,7 @@ button {
 }
 
 #tooltip .btn-agendar:hover {
-    background-color: #96B563;
+    background-color: #0082BA;
     color: #FFFFFF;
 }
 
