@@ -1,0 +1,5 @@
+*.psd
+*.mp4
+.vercel
+.git
+node_modules
