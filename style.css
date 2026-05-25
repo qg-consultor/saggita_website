@@ -13,14 +13,14 @@
 :root {
     /* --- COLORES DEL TEMA PAMYRA --- */
     --color-fondo: #FFFFFF;
-    --color-texto-principal: #354E3C;
-    --color-texto-secundario: #D5DCCE;
-    --color-primario: #354E3C; 
+    --color-texto-principal: #1C3775;
+    --color-texto-secundario: #D5E4F0;
+    --color-primario: #1C3775; 
     --color-primario-hover: #0082BA; 
     
     /* --- COLORES DEL MAPA (Adaptados a Pamyra) --- */
-    --mapa-seleccionado: #354E3C;
-    --mapa-seleccionado: #354E3C;
+    --mapa-seleccionado: #1C3775;
+    --mapa-seleccionado: #1C3775;
 
     /* --- TIPOGRAFÍA --- */
     --fuente-principal: 'Montserrat', sans-serif;
@@ -158,7 +158,7 @@ button {
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #354E3C; /* verde oscuro corporativo sobre fondo blanco */
+    color: #1C3775; /* verde oscuro corporativo sobre fondo blanco */
     transition: var(--transition);
     position: relative;
     padding: 10px 12px;
@@ -205,11 +205,11 @@ button {
 
 .hero-sidebar .social-icons a i {
     font-size: 16px;
-    color: #354E3C;
+    color: #1C3775;
 }
 
 .hero-sidebar .social-icons a:hover {
-    background: #354E3C;
+    background: #1C3775;
 }
 .hero-sidebar .social-icons a:hover i {
     color: #FFFFFF;
@@ -429,7 +429,7 @@ button {
     transition: var(--transition);
     pointer-events: auto; /* Reactivar clic */
     text-decoration: none;
-    color: #354E3C;
+    color: #1C3775;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* dropshadow ligero */
 }
 
@@ -947,7 +947,7 @@ button {
    ======================================================== */
 .proyecto-section {
     background-color: #FFFFFF;
-    color: #354E3C;
+    color: #1C3775;
     padding: 50px 5% 100px 5%; /* Uniform padding, reduced top */
     position: relative;
     z-index: 20;
@@ -1014,7 +1014,7 @@ button {
     font-family: var(--font-secundario);
     font-size: 20px; /* Aumentado tamaño de fuente */
     line-height: 1.6;
-    color: #354E3C; /* Modificado color principal */
+    color: #1C3775; /* Modificado color principal */
     max-width: 95%;
     margin-bottom: 10px;
 }
@@ -1030,7 +1030,7 @@ button {
 }
 
 .proyecto-sm-text .highlight-text {
-    color: #354E3C;
+    color: #1C3775;
     font-weight: 700;
 }
 
@@ -1120,7 +1120,7 @@ button {
     font-weight: 700;
     font-size: 38px;
     line-height: 1.4;
-    color: #354E3C; /* Modificado color principal */
+    color: #1C3775; /* Modificado color principal */
     letter-spacing: -0.5px;
 }
 
@@ -1221,7 +1221,7 @@ button {
    ======================================================== */
 .prototipos-section {
     background-color: #FFFFFF; /* Fondo muy oscuro basado en la referencia */
-    color: #354E3C;
+    color: #1C3775;
     padding: 50px 5% 100px 5%; /* Uniform padding, reduced top */
     position: relative;
     z-index: 10;
@@ -1250,7 +1250,7 @@ button {
 
 .badge-dark {
     border-color: rgba(53, 78, 60, 0.3);
-    color: #354E3C;
+    color: #1C3775;
 }
 
 .prototipos-main-title {
@@ -1483,7 +1483,7 @@ button {
         #master-plan .stat-card { background: #D5DCCE; border: none; border-radius: 12px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default; text-align: left; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
         #master-plan .stat-card:hover { transform: translateX(10px); box-shadow: 0 8px 25px rgba(53, 78, 60, 0.2); }
         #master-plan .stat-number { font-size: 1.8rem; font-weight: 800; color: var(--color-primario); margin-bottom: 5px; }
-        #master-plan .stat-label { font-size: 0.9rem; font-weight: 500; color: #354E3C; }
+        #master-plan .stat-label { font-size: 0.9rem; font-weight: 500; color: #1C3775; }
         /* MAPA COMPACTO HORIZONTAL A LA DERECHA CON SHADOW BUFFER GEOMÉTRICO PERFECTO */
         #master-plan .map-wrapper { flex: 1 1 auto !important; position: relative; display: flex; flex-direction: column; align-items: center; z-index: 1; padding-top: 0px; width: calc(100% - 400px); overflow: hidden; order: 2; }
         #master-plan .map-zoom-container { width: 100%; height: auto; position: relative; transition: transform 0.3s ease-out; transform-origin: center center; cursor: crosshair; }
@@ -1502,7 +1502,7 @@ button {
         .tt-title { font-weight: 800; font-size: 1.4rem; margin-bottom: 8px; color: var(--color-primario); text-transform: uppercase; letter-spacing: 1px; }
         .tt-desc { font-weight: 300; font-size: 0.95rem; color: #ddd; margin-bottom: 20px; }
         #tt-btn { display: inline-block; background: white; color: black; padding: 8px 16px; border-radius: 20px; font-family: var(--fuente-principal) !important; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px !important; cursor: pointer; border: none; width: 100%; transition: background 0.2s ease, color 0.2s ease; }
-        #tt-btn:hover { background: #354E3C !important; color: white !important; }
+        #tt-btn:hover { background: #1C3775 !important; color: white !important; }
         .tt-close-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; color: #D5DCCE; font-size: 1.2rem; cursor: pointer; transition: color 0.2s ease; z-index: 10; padding: 5px; line-height: 1; }
         .tt-close-btn:hover { color: white; }
         .tt-logo-container { width: 100%; text-align: center; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -1516,7 +1516,7 @@ button {
         #master-plan .lote-disponible { fill: url(#ashurado-verde) !important; transition: all 0.3s ease; }
         #master-plan .lote-disponible:hover { fill: var(--color-primario) !important; opacity: 0.9 !important; }
         /* 3. EL SELECCIONADO HASTA ABAJO (Para que le gane a los ashurados y se quede verde fijo) */
-        #master-plan .lote-seleccionado { fill: #D5DCCE !important; opacity: 0.9 !important; stroke: #354E3C !important; stroke-width: 2px !important; }
+        #master-plan .lote-seleccionado { fill: #D5DCCE !important; opacity: 0.9 !important; stroke: #1C3775 !important; stroke-width: 2px !important; }
 
 @media (max-width: 1024px) {
   #master-plan .mp-container { display: flex !important; flex-direction: column !important; gap: 30px; padding: 10px; }
@@ -1595,7 +1595,7 @@ button {
 .ubicacion-section {
     background-color: #FFFFFF;
     padding: 50px 5% 100px 5%; /* Uniform padding, reduced top */
-    color: #354E3C;
+    color: #1C3775;
     position: relative;
     z-index: 20;
 }
@@ -1629,7 +1629,7 @@ button {
     color: var(--color-primario);
 }
 .ubicacion-title .text-dark {
-    color: #354E3C;
+    color: #1C3775;
 }
 
 .ubicacion-content {
@@ -1696,7 +1696,7 @@ button {
     font-family: var(--font-secundario);
     font-weight: 800;
     font-size: 20px;
-    color: #354E3C;
+    color: #1C3775;
     margin-bottom: 2px;
     line-height: 1.2;
 }
@@ -2016,7 +2016,7 @@ button {
 
 #tooltip .btn-agendar {
     background-color: #F8F3E8;
-    color: #354E3C;
+    color: #1C3775;
     font-family: var(--fuente-secundaria);
     font-weight: 700;
     font-size: 14px;
@@ -2035,4 +2035,5 @@ button {
     background-color: #0082BA;
     color: #FFFFFF;
 }
+
 
