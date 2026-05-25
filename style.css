@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'NeueMontreal-Bold';
+    src: url('FUENTES/NeueMontreal-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 /* ========================================================
    CSS Variables & Resets
@@ -16,8 +23,8 @@
     --mapa-seleccionado: #354E3C;
 
     /* --- TIPOGRAFÍA --- */
-    --fuente-principal: 'Avenir', 'Nunito Sans', sans-serif;
-    --fuente-secundaria: 'Baskerville', 'Libre Baskerville', serif;
+    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-secundaria: 'NeueMontreal-Bold', sans-serif;
 
     /* --- RETROCOMPATIBILIDAD CON ALIAS ANTERIORES PARA EVITAR QUE SE ROMPA EL SITIO --- */
     --color-secundario: var(--color-texto-secundario);
@@ -25,7 +32,7 @@
     --color-text-muted: #888888;
     --color-border: rgba(53, 78, 60, 0.2);
     --font-main: var(--fuente-principal);
-    --font-secundario: var(--fuente-principal);
+    --font-secundario: var(--fuente-secundaria);
     
     --primary-color: var(--color-primario);
     --text-dark: var(--color-fondo);
