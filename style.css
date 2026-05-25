@@ -1432,7 +1432,8 @@ button {
 }
 
 .proto-info p {
-    font-family: var(--font-secundario);
+    font-family: var(--font-main);
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.6;
     color: #999;
