@@ -1025,6 +1025,12 @@ button {
     font-weight: 700;
 }
 
+.highlight-saggita {
+    font-family: var(--font-main) !important;
+    font-weight: 600 !important;
+    color: #0082BA !important;
+}
+
 .proyecto-sm-text .fw-light {
     color: #666666;
     font-weight: 300; /* Peso light */
