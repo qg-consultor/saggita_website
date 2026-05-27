@@ -2047,3 +2047,25 @@ button {
     color: #FFFFFF;
 }
 
+.lote-interactivo {
+    opacity: 0;
+    fill: transparent;
+    cursor: pointer;
+    transition: opacity 0.3s ease, fill 0.3s ease;
+}
+
+/* Estado al pasar el mouse (Hover) */
+.lote-interactivo:hover {
+    opacity: 1;
+    fill: var(--mapa-ashurado-disponible);
+    stroke: var(--mapa-borde-disponible);
+    stroke-width: 2px;
+}
+
+/* Estado al darle clic (Seleccionado) */
+.lote-interactivo.is-selected {
+    opacity: 1;
+    fill: var(--mapa-seleccionado);
+    stroke: var(--color-fondo);
+    stroke-width: 3px;
+}
