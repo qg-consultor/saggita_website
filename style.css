@@ -1508,26 +1508,28 @@ button {
         /* MAGIA DEL MAPA */
         #master-plan .lote-magico { cursor: pointer !important; pointer-events: all !important; }
         /* EL NUEVO TOOLTIP PREMIUM */
-        #tooltip { position: absolute; background: var(--color-primario); border: 1px solid var(--color-texto-secundario); backdrop-filter: blur(12px); color: white; padding: 25px; border-radius: 12px; opacity: 0; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease; z-index: 1000; box-shadow: 0 10px 40px rgba(0,0,0,0.7); min-width: 200px; visibility: hidden; pointer-events: all; border-left-width: 5px; }
+        #tooltip { position: absolute; background: #1C3775; border: 1px solid var(--color-texto-secundario); backdrop-filter: blur(12px); color: white; padding: 25px; border-radius: 12px; opacity: 0; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease; z-index: 1000; box-shadow: 0 10px 40px rgba(0,0,0,0.7); min-width: 200px; visibility: hidden; pointer-events: all; border-left-width: 5px; }
         #tooltip.visible { opacity: 1; transform: translateY(0); visibility: visible; }
         .tt-title { font-weight: 800; font-size: 1.4rem; margin-bottom: 8px; color: var(--color-texto-secundario); text-transform: uppercase; letter-spacing: 1px; }
         .tt-desc { font-weight: 300; font-size: 0.95rem; color: #FFFFFF; margin-bottom: 20px; }
-        #tt-btn { display: inline-block; background: var(--color-texto-secundario) !important; color: var(--color-primario) !important; padding: 8px 16px; border-radius: 20px; font-family: var(--fuente-principal) !important; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px !important; cursor: pointer; border: none; width: 100%; transition: background 0.2s ease, color 0.2s ease; }
-        #tt-btn:hover { background: #FFFFFF !important; color: var(--color-primario) !important; }
+        #tt-btn { display: inline-block; background: #0082BA !important; color: #FFFFFF !important; padding: 8px 16px; border-radius: 20px; font-family: var(--fuente-principal) !important; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px !important; cursor: pointer; border: none; width: 100%; transition: background 0.2s ease, color 0.2s ease; }
+        #tt-btn:hover { background: #FFFFFF !important; color: #0082BA !important; }
         .tt-close-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; color: #D5DCCE; font-size: 1.2rem; cursor: pointer; transition: color 0.2s ease; z-index: 10; padding: 5px; line-height: 1; }
         .tt-close-btn:hover { color: white; }
         .tt-logo-container { width: 100%; text-align: center; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
         .tt-logo { max-width: 60px; height: auto; filter: brightness(0) invert(1); opacity: 0.9; }
- /* ESTADOS DE LOS LOTES (¡AQUÍ ESTÁ LA MAGIA VISUAL!) */
+        /* ESTADOS DE LOS LOTES (¡AQUÍ ESTÁ LA MAGIA VISUAL!) */
         /* 1. Hacemos que TODOS los lotes sean clickeables */
-        #master-plan .lote-activo { cursor: pointer !important; pointer-events: all !important; }
+        #master-plan .lote-activo { cursor: pointer !important; pointer-events: all !important; transition: all 0.3s ease; }
         /* 2. Diseño de Vendidos y Disponibles */
-        #master-plan .lote-vendido { fill: url(#ashurado-vendido) !important; opacity: 0.8 !important; }
-        #master-plan .lote-vendido:hover { stroke: var(--color-text) !important; stroke-width: 1px !important; opacity: 1 !important; }
-        #master-plan .lote-disponible { fill: url(#ashurado-verde) !important; transition: all 0.3s ease; }
-        #master-plan .lote-disponible:hover { fill: var(--color-primario) !important; opacity: 0.9 !important; }
-        /* 3. EL SELECCIONADO HASTA ABAJO (Para que le gane a los ashurados y se quede verde fijo) */
-        #master-plan .lote-seleccionado { fill: #D5DCCE !important; opacity: 0.9 !important; stroke: #354E3C !important; stroke-width: 2px !important; }
+        #master-plan .lote-vendido { fill: rgba(0,0,0,0.5) !important; opacity: 0.8 !important; }
+        #master-plan .lote-disponible { fill: transparent !important; }
+        
+        /* HOVER: Celeste Saggita y Stroke Blanco */
+        #master-plan .lote-disponible:hover { fill: #0082BA !important; opacity: 0.8 !important; stroke: #ffffff !important; stroke-width: 2px !important; }
+        
+        /* SELECCIONADO: Azul Marino y Stroke Blanco */
+        #master-plan .is-selected { fill: #1C3775 !important; opacity: 0.9 !important; stroke: #ffffff !important; stroke-width: 3px !important; }
 
 @media (max-width: 1024px) {
   #master-plan .mp-container { display: flex !important; flex-direction: column !important; gap: 30px; padding: 10px; }
