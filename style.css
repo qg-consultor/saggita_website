@@ -91,7 +91,7 @@ button {
     min-height: 800px;
     overflow: hidden;
     /* The ripples library will use this background image */
-    background-image: url('https://res.cloudinary.com/dwkgoevjn/video/upload/v1779731390/Saggita_Residencial_Timelapse_jm6k77.jpg');
+    background-image: url('https://res.cloudinary.com/dwkgoevjn/video/upload/so_0/v1779731390/Saggita_Residencial_Timelapse_jm6k77.jpg');
     background-size: cover;
     background-position: center bottom;
     /* Removido background-attachment: fixed; para evitar que la imagen se vea "muy extendida" en ciertas pantallas */
