@@ -1491,10 +1491,10 @@ button {
         /* PANEL IZQUIERDO Y TARJETAS */
         #master-plan .stats-panel { flex: 0 0 350px !important; display: flex; flex-direction: column; gap: 20px; z-index: 10; order: 1; text-align: left; }
         #master-plan .stats-panel h2 { font-weight: 800; font-size: 2rem; margin-bottom: 10px; letter-spacing: -2px; text-transform: uppercase; }
-        #master-plan .stat-card { background: #D5DCCE; border: none; border-radius: 12px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default; text-align: left; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        #master-plan .stat-card:hover { transform: translateX(10px); box-shadow: 0 8px 25px rgba(53, 78, 60, 0.2); }
-        #master-plan .stat-number { font-size: 1.8rem; font-weight: 800; color: var(--color-primario); margin-bottom: 5px; }
-        #master-plan .stat-label { font-size: 0.9rem; font-weight: 500; color: #354E3C; }
+        #master-plan .stat-card { background: #0082BA; border: none; border-radius: 12px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: default; text-align: left; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        #master-plan .stat-card:hover { transform: translateX(10px); box-shadow: 0 8px 25px rgba(0, 130, 186, 0.4); }
+        #master-plan .stat-number { font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 5px; }
+        #master-plan .stat-label { font-size: 0.9rem; font-weight: 500; color: #FFFFFF; }
         /* MAPA COMPACTO HORIZONTAL A LA DERECHA CON SHADOW BUFFER GEOMÉTRICO PERFECTO */
         #master-plan .map-wrapper { flex: 1 1 auto !important; position: relative; display: flex; flex-direction: column; align-items: center; z-index: 1; padding-top: 0px; width: calc(100% - 400px); overflow: hidden; order: 2; }
         #master-plan .map-zoom-container { width: 100%; height: auto; position: relative; transition: transform 0.3s ease-out; transform-origin: center center; cursor: crosshair; }
@@ -1502,18 +1502,18 @@ button {
         #master-plan .base-map-img { width: 100%; height: auto; display: block; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); }
         #master-plan .interactive-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
         
-        #master-plan .map-instruction { position: relative; white-space: nowrap; background: rgba(127, 155, 79, 0.15); border: 1px solid rgba(127, 155, 79, 0.4); color: var(--color-primario); padding: 12px 30px; border-radius: 30px; font-size: 1.1rem; font-weight: 800; display: flex; align-items: center; gap: 8px; animation: floatY 3s ease-in-out infinite; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        #master-plan .map-instruction { position: relative; white-space: nowrap; background: #0082BA; border: none; color: #FFFFFF; padding: 12px 30px; border-radius: 30px; font-size: 1.1rem; font-weight: 800; display: flex; align-items: center; gap: 8px; animation: floatY 3s ease-in-out infinite; box-shadow: 0 10px 20px rgba(0, 130, 186, 0.3); }
         #master-plan .map-instruction span { font-size: 1.4rem; }
         @keyframes floatY { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
         /* MAGIA DEL MAPA */
         #master-plan .lote-magico { cursor: pointer !important; pointer-events: all !important; }
         /* EL NUEVO TOOLTIP PREMIUM */
-        #tooltip { position: absolute; background: rgba(20, 20, 20, 0.95); border: 1px solid var(--color-primario); backdrop-filter: blur(12px); color: white; padding: 25px; border-radius: 12px; opacity: 0; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease; z-index: 1000; box-shadow: 0 10px 40px rgba(0,0,0,0.7); min-width: 200px; visibility: hidden; pointer-events: all; border-left-width: 5px; }
+        #tooltip { position: absolute; background: var(--color-primario); border: 1px solid var(--color-texto-secundario); backdrop-filter: blur(12px); color: white; padding: 25px; border-radius: 12px; opacity: 0; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease; z-index: 1000; box-shadow: 0 10px 40px rgba(0,0,0,0.7); min-width: 200px; visibility: hidden; pointer-events: all; border-left-width: 5px; }
         #tooltip.visible { opacity: 1; transform: translateY(0); visibility: visible; }
-        .tt-title { font-weight: 800; font-size: 1.4rem; margin-bottom: 8px; color: var(--color-primario); text-transform: uppercase; letter-spacing: 1px; }
-        .tt-desc { font-weight: 300; font-size: 0.95rem; color: #ddd; margin-bottom: 20px; }
-        #tt-btn { display: inline-block; background: #0082BA !important; color: white !important; padding: 8px 16px; border-radius: 20px; font-family: var(--fuente-principal) !important; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px !important; cursor: pointer; border: none; width: 100%; transition: background 0.2s ease, color 0.2s ease; }
-        #tt-btn:hover { background: #1C3775 !important; color: white !important; }
+        .tt-title { font-weight: 800; font-size: 1.4rem; margin-bottom: 8px; color: var(--color-texto-secundario); text-transform: uppercase; letter-spacing: 1px; }
+        .tt-desc { font-weight: 300; font-size: 0.95rem; color: #FFFFFF; margin-bottom: 20px; }
+        #tt-btn { display: inline-block; background: var(--color-texto-secundario) !important; color: var(--color-primario) !important; padding: 8px 16px; border-radius: 20px; font-family: var(--fuente-principal) !important; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px !important; cursor: pointer; border: none; width: 100%; transition: background 0.2s ease, color 0.2s ease; }
+        #tt-btn:hover { background: #FFFFFF !important; color: var(--color-primario) !important; }
         .tt-close-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; color: #D5DCCE; font-size: 1.2rem; cursor: pointer; transition: color 0.2s ease; z-index: 10; padding: 5px; line-height: 1; }
         .tt-close-btn:hover { color: white; }
         .tt-logo-container { width: 100%; text-align: center; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -2058,15 +2058,15 @@ button {
 /* Estado al pasar el mouse (Hover) */
 .lote-interactivo:hover {
     opacity: 1;
-    fill: var(--mapa-ashurado-disponible);
-    stroke: var(--mapa-borde-disponible);
+    fill: rgba(0, 130, 186, 0.6);
+    stroke: #ffffff;
     stroke-width: 2px;
 }
 
 /* Estado al darle clic (Seleccionado) */
 .lote-interactivo.is-selected {
     opacity: 1;
-    fill: var(--mapa-seleccionado);
-    stroke: var(--color-fondo);
+    fill: rgba(0, 130, 186, 0.9);
+    stroke: #ffffff;
     stroke-width: 3px;
 }
