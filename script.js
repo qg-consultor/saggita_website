@@ -352,14 +352,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 const shapes = document.querySelectorAll('.lote-interactivo');
                 shapes.forEach(shape => {
                     const id = shape.id;
-                    if (id && LOT_DATA[id]) {
-                        shape.setAttribute('data-title', id.replace('-', ' '));
-                        shape.setAttribute('data-const', LOT_DATA[id].const);
-                        shape.setAttribute('data-terr', LOT_DATA[id].terr);
-                        shape.setAttribute('data-status', LOT_DATA[id].status);
+                    if (id) {
+                        const data = LOT_DATA[id] || { const: '181.10', terr: '141.40', status: 'Disponible' };
+                        let loteName = id;
+                        if(id.includes('-M')) {
+                            loteName = 'LOTE ' + id.split('-M')[1];
+                        }
+                        shape.setAttribute('data-title', loteName);
+                        shape.setAttribute('data-const', data.const);
+                        shape.setAttribute('data-terr', data.terr);
+                        shape.setAttribute('data-status', data.status);
                         
-                        if (LOT_DATA[id].status.toLowerCase() === 'disponible') {
-                            shape.classList.add('lote-disponible', 'lote-activo', 'lote-magico');
+                        if (data.status.toLowerCase() === 'disponible') {
+                            shape.classList.add('lote-disponible', 'lote-activo');
                         } else {
                             shape.classList.add('lote-vendido', 'lote-activo'); 
                         }
@@ -370,11 +375,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.addEventListener('click', (e) => {
             const lote = e.target.closest('.lote-activo');
-            document.querySelectorAll('.lote-seleccionado').forEach(el => el.classList.remove('lote-seleccionado'));
+            document.querySelectorAll('.is-selected').forEach(el => el.classList.remove('is-selected'));
             
             if(lote) {
                 e.stopPropagation(); 
-                lote.classList.add('lote-seleccionado');
+                lote.classList.add('is-selected');
 
                 const titulo = lote.getAttribute('data-title');
                 const constr = lote.getAttribute('data-const');
@@ -395,7 +400,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 tooltip.classList.add('visible');
             } else if (!e.target.closest('#tooltip')) {
                 tooltip.classList.remove('visible');
-                document.querySelectorAll('.lote-seleccionado').forEach(el => el.classList.remove('lote-seleccionado'));
             }
         });
 
@@ -407,7 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ttClose.addEventListener('click', (e) => {
                 e.stopPropagation();
                 tooltip.classList.remove('visible');
-                document.querySelectorAll('.lote-seleccionado').forEach(el => el.classList.remove('lote-seleccionado'));
+                document.querySelectorAll('.is-selected').forEach(el => el.classList.remove('is-selected'));
             });
         }
         
