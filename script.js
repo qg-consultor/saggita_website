@@ -356,7 +356,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         const data = LOT_DATA[id] || { const: '181.10', terr: '141.40', status: 'Disponible' };
                         let loteName = id;
                         if(id.includes('-M')) {
-                            loteName = 'LOTE ' + id.split('-M')[1];
+                            const parts = id.split('-M');
+                            const mzStr = parts[0].replace('SAG', '');
+                            const loteStr = parts[1];
+                            loteName = 'MZ' + mzStr + ' LOTE ' + loteStr;
                         }
                         shape.setAttribute('data-title', loteName);
                         shape.setAttribute('data-const', data.const);
