@@ -91,7 +91,7 @@ button {
     min-height: 800px;
     overflow: hidden;
     /* The ripples library will use this background image */
-    background-image: url('SECCIONES/HERO/IMAGENES/Palmyra - HOME.png');
+    background-image: url('https://res.cloudinary.com/dwkgoevjn/video/upload/v1779731390/Saggita_Residencial_Timelapse_jm6k77.jpg');
     background-size: cover;
     background-position: center bottom;
     /* Removido background-attachment: fixed; para evitar que la imagen se vea "muy extendida" en ciertas pantallas */
@@ -1508,10 +1508,10 @@ button {
         /* MAGIA DEL MAPA */
         #master-plan .lote-magico { cursor: pointer !important; pointer-events: all !important; }
         /* EL NUEVO TOOLTIP PREMIUM */
-        #tooltip { position: absolute; background: #1C3775; border: 1px solid var(--color-texto-secundario); backdrop-filter: blur(12px); color: white; padding: 25px; border-radius: 12px; opacity: 0; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease; z-index: 1000; box-shadow: 0 10px 40px rgba(0,0,0,0.7); min-width: 200px; visibility: hidden; pointer-events: all; border-left-width: 5px; }
+        #tooltip { position: absolute; background: #0d1b3b; border: 1px solid var(--color-texto-secundario); backdrop-filter: blur(12px); color: white; padding: 25px; border-radius: 12px; opacity: 0; transform: translateY(10px); transition: opacity 0.2s ease, transform 0.2s ease; z-index: 1000; box-shadow: 0 10px 40px rgba(0,0,0,0.7); min-width: 200px; visibility: hidden; pointer-events: all; border-left-width: 5px; }
         #tooltip.visible { opacity: 1; transform: translateY(0); visibility: visible; }
-        .tt-title { font-weight: 800; font-size: 1.4rem; margin-bottom: 8px; color: var(--color-texto-secundario); text-transform: uppercase; letter-spacing: 1px; }
-        .tt-desc { font-weight: 300; font-size: 0.95rem; color: #FFFFFF; margin-bottom: 20px; }
+        .tt-title { font-family: 'NeueMontreal-Bold', sans-serif; font-weight: 800; font-size: 1.4rem; margin-bottom: 8px; color: var(--color-texto-secundario); text-transform: uppercase; letter-spacing: 1px; }
+        .tt-desc { font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 0.95rem; color: #FFFFFF; margin-bottom: 20px; }
         #tt-btn { display: inline-block; background: #0082BA !important; color: #FFFFFF !important; padding: 8px 16px; border-radius: 20px; font-family: var(--fuente-principal) !important; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px !important; cursor: pointer; border: none; width: 100%; transition: background 0.2s ease, color 0.2s ease; }
         #tt-btn:hover { background: #FFFFFF !important; color: #0082BA !important; }
         .tt-close-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; color: #D5DCCE; font-size: 1.2rem; cursor: pointer; transition: color 0.2s ease; z-index: 10; padding: 5px; line-height: 1; }
