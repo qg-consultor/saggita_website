@@ -1500,7 +1500,7 @@ button {
         #master-plan .map-zoom-container { width: 100%; height: auto; position: relative; transition: transform 0.3s ease-out; transform-origin: center center; cursor: crosshair; }
         #master-plan .map-rotation-wrapper { width: 70%; height: auto; position: relative; margin: 0 auto; transform: rotate(90deg); transform-origin: center center; transition: transform 0.4s ease; }
         #master-plan .base-map-img { width: 100%; height: auto; display: block; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); }
-        #master-plan .interactive-svg { width: 100%; height: auto; display: block; pointer-events: all; z-index: 2; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); }
+        #master-plan .interactive-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
         
         #master-plan .map-instruction { position: relative; white-space: nowrap; background: rgba(127, 155, 79, 0.15); border: 1px solid rgba(127, 155, 79, 0.4); color: var(--color-primario); padding: 12px 30px; border-radius: 30px; font-size: 1.1rem; font-weight: 800; display: flex; align-items: center; gap: 8px; animation: floatY 3s ease-in-out infinite; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         #master-plan .map-instruction span { font-size: 1.4rem; }
@@ -2051,6 +2051,7 @@ button {
     opacity: 0;
     fill: transparent;
     cursor: pointer;
+    pointer-events: all !important;
     transition: opacity 0.3s ease, fill 0.3s ease;
 }
 
