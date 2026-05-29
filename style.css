@@ -913,7 +913,7 @@ button {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    background: var(--color-primario);
+    background: #0082BA;
     color: #F8F3E8; /* Icono de flecha en color crema claro */
     width: 50px;
     height: 50px;
@@ -938,7 +938,7 @@ button {
 }
 
 .back-to-top:hover {
-    background: var(--color-secundario);
+    background: #1C3775;
     transform: translateY(-5px);
 }
 
