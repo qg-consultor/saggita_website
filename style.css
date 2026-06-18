@@ -2071,3 +2071,9 @@ button {
     color: #B3E5FC !important;
 }
 
+/* Ajustar el frame del video en PC para que tenga aspecto 16:9 nativo y evite barras negras del iframe */
+.proyecto-right-img {
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+}
+
