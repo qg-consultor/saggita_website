@@ -2104,5 +2104,11 @@ button {
     #master-plan .map-wrapper {
         order: 3 !important;
     }
+
+    /* Ajustes solicitados para las pills del formulario de contacto en mobile */
+    .contacto-tags .c-tag {
+        padding: 8px 14px !important;
+        border-radius: 10px !important;
+    }
 }
 
