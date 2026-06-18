@@ -2010,10 +2010,10 @@ button {
     transform: translateY(-50%) scale(0.95) !important;
 }
 
-/* Texto de Proyecto Justificado */
+/* Texto de Proyecto */
 .proyecto-large-quote {
-    text-align: justify;
-    hyphens: auto;
+    text-align: left;
+    hyphens: none;
 }
 
 /* Ajustes Mobile específicos */
