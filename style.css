@@ -2099,6 +2099,7 @@ button {
         width: 100% !important;
         display: flex !important;
         justify-content: center !important;
+        margin-top: 15px !important;
     }
     #master-plan .map-wrapper {
         order: 3 !important;
