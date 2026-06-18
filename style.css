@@ -134,7 +134,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px 22px 140px 22px; /* bottom padding eleva los iconos por arriba del degradado blanco de 120px */
+    padding: 15px 22px 140px 22px; /* bottom padding eleva los iconos por arriba del degradado blanco de 120px */
     background: rgba(255, 255, 255, 0.80); /* Transparente al 80% */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
