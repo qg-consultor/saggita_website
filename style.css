@@ -1978,3 +1978,57 @@ button {
     stroke-width: 2px;
 }
 
+/* =========================================
+   NUEVOS AJUSTES (HERO, MOBILE, SLIDER)
+   ========================================= */
+
+/* Fix for iframe object-fit cover equivalent */
+.hero-video-bg {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    min-width: 177.77vh !important; /* Forces 16:9 aspect ratio minimum width */
+    min-height: 56.25vw !important; /* Forces 16:9 aspect ratio minimum height */
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Flechas slider azul celeste */
+.glass-slider-btn {
+    color: #00BFFF !important; /* Azul celeste */
+}
+.glass-slider-btn:hover i, 
+.glass-slider-btn:active i {
+    color: #00BFFF !important;
+}
+/* Evita que se quede en blanco en mobile */
+.glass-slider-btn:active {
+    background: rgba(255, 255, 255, 0.4) !important;
+    transform: translateY(-50%) scale(0.95) !important;
+}
+
+/* Texto de Proyecto Justificado */
+.proyecto-large-quote {
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Ajustes Mobile específicos */
+@media (max-width: 768px) {
+    /* Disminuir espacio entre Amenidades y Distribución arquitectónica */
+    .prototipos-section {
+        padding-bottom: 20px !important;
+    }
+    .floorplan-gallery-container.bg-white {
+        padding-top: 30px !important;
+    }
+    
+    /* Mejorar texto de proyecto en mobile para que no quede mal justificado */
+    .proyecto-large-quote {
+        font-size: 18px !important;
+    }
+}
+
