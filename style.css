@@ -2036,11 +2036,9 @@ button {
         line-height: 1.4 !important;
     }
     
-    /* Reducir el tamaño de las pills en el frame de video */
+    /* Ajustar las pills en el frame de video a las propiedades de la referencia */
     .tag {
-        padding: 10px 18px !important;
-        font-size: 14px !important;
-        font-weight: 600 !important;
+        padding: 10px 20px !important;
         border-radius: 10px !important;
         white-space: nowrap !important;
         text-align: center;
@@ -2080,5 +2078,30 @@ button {
 .proyecto-right-img {
     height: auto !important;
     aspect-ratio: 16 / 9 !important;
+}
+
+/* Reordenamiento Master Plan Mobile */
+@media (max-width: 768px) {
+    #master-plan {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    #master-plan .mp-container {
+        display: contents !important;
+    }
+    #master-plan .stats-panel {
+        order: 1 !important;
+        width: 100% !important;
+    }
+    .mp-header-instruction {
+        order: 2 !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    #master-plan .map-wrapper {
+        order: 3 !important;
+    }
 }
 
