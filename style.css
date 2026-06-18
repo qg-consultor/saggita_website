@@ -501,7 +501,7 @@ button {
         width: auto;
     }
     .header-logo {
-        max-width: 90px !important;
+        max-width: 80px !important;
     }
     .hero-bottom-grid {
         left: 20px;
@@ -579,7 +579,7 @@ button {
         width: auto;
     }
     .header-logo {
-        max-width: 85px !important;
+        max-width: 70px !important;
     }
     .hero-sidebar .nav-links {
         flex-direction: row;
