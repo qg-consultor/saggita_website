@@ -2020,15 +2020,39 @@ button {
 @media (max-width: 768px) {
     /* Disminuir espacio entre Amenidades y Distribución arquitectónica */
     .prototipos-section {
-        padding-bottom: 20px !important;
+        padding-bottom: 0px !important;
     }
     .floorplan-gallery-container.bg-white {
-        padding-top: 30px !important;
+        padding-top: 0px !important;
+    }
+    .fp-title {
+        margin-top: 0 !important;
+        padding-top: 15px !important;
     }
     
     /* Mejorar texto de proyecto en mobile para que no quede mal justificado */
     .proyecto-large-quote {
         font-size: 18px !important;
     }
+    
+    /* Ubicación: Forzar imagen arriba, info abajo en todas las filas */
+    .place-row, .place-row.reverse {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .place-row .place-img-wrapper, .place-row.reverse .place-img-wrapper {
+        order: 1 !important;
+    }
+    .place-row .place-info, .place-row.reverse .place-info {
+        order: 2 !important;
+        justify-content: center !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+}
+
+/* Color azul celeste muy ligero para los íconos de ubicación */
+.place-icon {
+    color: #B3E5FC !important;
 }
 
