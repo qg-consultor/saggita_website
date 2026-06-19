@@ -347,9 +347,9 @@ document.addEventListener('DOMContentLoaded', () => {
     'LOTE-211': { const: '181.10', terr: '141.40', status: 'Disponible' }
 };
 
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                const shapes = document.querySelectorAll('.lote-interactivo');
+        // Lógica del mapa sin window.addEventListener('load') porque el script ya es defer
+        setTimeout(() => {
+            const shapes = document.querySelectorAll('.lote-interactivo');
                 shapes.forEach(shape => {
                     const id = shape.id;
                     if (id) {
@@ -373,8 +373,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     }
                 });
-            }, 1000); 
-        });
+        }, 2000); 
 
         document.addEventListener('click', (e) => {
             const lote = e.target.closest('.lote-activo');

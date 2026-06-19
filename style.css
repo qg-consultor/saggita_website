@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
 @font-face {
     font-family: 'NeueMontreal-Bold';
     src: url('FUENTES/NeueMontreal-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 /* ========================================================
