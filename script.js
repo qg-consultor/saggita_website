@@ -533,3 +533,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// --- PAGE LOADER LOGIC ---
+(function () {
+ window.addEventListener('load', function () {
+   const loader = document.getElementById('pageLoader');
+   if (!loader) return;
+   function dismissLoader() {
+     // Añade la clase que activa la transición en CSS
+     loader.classList.add('hidden');
+    
+     // Una vez terminada la transición, elimina el elemento del DOM
+     loader.addEventListener('transitionend', function () {
+       loader.remove();
+     }, { once: true });
+   }
+   // Espera de 2.5s (2500ms) para que se aprecie la animación antes de cerrarse
+   setTimeout(dismissLoader, 2500);
+ });
+})();
