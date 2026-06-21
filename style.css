@@ -1,8 +1,40 @@
 @font-face {
     font-family: 'NeueMontreal-Bold';
     src: url('FUENTES/NeueMontreal-Bold.otf') format('opentype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('FUENTES/NeueMontreal-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('FUENTES/NeueMontreal-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('FUENTES/NeueMontreal-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('FUENTES/NeueMontreal-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
     font-display: swap;
 }
 
@@ -18,7 +50,6 @@
     --color-primario-hover: #0082BA; 
     
     /* --- COLORES DEL MAPA (Adaptados a Pamyra) --- */
-    --mapa-seleccionado: #354E3C;
     --mapa-seleccionado: #354E3C;
 
     /* --- TIPOGRAFÍA --- */

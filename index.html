@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saggita - El futuro que mereces</title>
-    <link rel="icon" type="image/png" href="LOGOS/Favicon.png">
+    <link rel="icon" type="image/png" href="LOGOS/Favicon.webp">
     <meta name="description" content="Saggita Residencial es un desarrollo de 302 lotes en el corredor Circuito Universidades. Su ubicación e infraestructura son la mejor alternativa para construir vivienda o invertir.">
     
     <!-- Open Graph / Redes Sociales -->
@@ -24,9 +24,7 @@
     <!-- FontAwesome for Icons -->
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-    <!-- jQuery and jquery.ripples for water distortion effect -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/jquery.ripples.min.js" defer></script>
+    <!-- jQuery y jquery.ripples eliminados — se usa vanilla JS -->
 </head>
 <body>
 
@@ -36,7 +34,7 @@
        <!-- Anillo interior que contiene el logo -->
        <div class="box">
          <div class="logo">
-           <img src="LOGOS/Grupo_DRT_Logo.png" alt="Grupo DRT Logo" class="loader-logo-img">
+           <img src="LOGOS/Grupo_DRT_Logo.webp" alt="Grupo DRT Logo" class="loader-logo-img">
          </div>
        </div>
        <!-- Anillos exteriores -->
@@ -51,6 +49,7 @@
     <section class="hero" id="hero">
         
         <!-- Video Background -->
+        <!-- Video hero: se carga siempre (above the fold) -->
         <iframe 
             src="https://customer-pspcmgjur4m25f7o.cloudflarestream.com/5316436cbf00bab7fbfd7bfcf8ab9ea2/iframe?poster=https%3A%2F%2Fcustomer-pspcmgjur4m25f7o.cloudflarestream.com%2F5316436cbf00bab7fbfd7bfcf8ab9ea2%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&autoplay=true&loop=true&muted=true&controls=false"
             class="hero-video-bg"
@@ -61,7 +60,7 @@
         <!-- Navigation Sidebar (Exclusive to Hero Section) -->
         <aside class="hero-sidebar">
             <div class="nav-logo" style="width: 100%; display: flex; justify-content: center; margin-top: 10px; margin-bottom: 30px;">
-                <img src="LOGOS/LOGO SAGGITA_png19jul.png" alt="Saggita Logo" class="header-logo" style="width: 100%; height: auto; max-width: 110px;">
+                <img src="LOGOS/LOGO SAGGITA_png19jul.webp" alt="Saggita Logo" class="header-logo" style="width: 100%; height: auto; max-width: 110px;">
             </div>
             <div class="nav-links">
                 <a href="#hero">HOME</a>
@@ -151,8 +150,9 @@
                 <!-- Right Image Column -->
                 <div class="proyecto-right-img">
                     <div class="image-wrapper">
+                        <!-- Video proyecto: lazy — carga solo cuando entra al viewport -->
                         <iframe 
-                            src="https://customer-pspcmgjur4m25f7o.cloudflarestream.com/5855a625a2758e3f601384af56ed1689/iframe?poster=https%3A%2F%2Fcustomer-pspcmgjur4m25f7o.cloudflarestream.com%2F5855a625a2758e3f601384af56ed1689%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&autoplay=true&loop=true&muted=true&controls=false"
+                            data-src="https://customer-pspcmgjur4m25f7o.cloudflarestream.com/5855a625a2758e3f601384af56ed1689/iframe?poster=https%3A%2F%2Fcustomer-pspcmgjur4m25f7o.cloudflarestream.com%2F5855a625a2758e3f601384af56ed1689%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&autoplay=true&loop=true&muted=true&controls=false"
                             class="main-project-image"
                             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                             allowfullscreen="true"
@@ -185,25 +185,25 @@
                 <div class="gallery-wrapper" id="gallery-carousel">
                     <!-- Gallery Cards -->
                     <div class="gallery-card">
-                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Casa_Club.png" alt="Casa Club" class="gallery-img">
+                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Casa_Club.webp" alt="Casa Club" class="gallery-img" loading="lazy">
                     </div>
                     <div class="gallery-card">
-                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Alberca.png" alt="Alberca" class="gallery-img">
+                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Alberca.webp" alt="Alberca" class="gallery-img" loading="lazy">
                     </div>
                     <div class="gallery-card">
-                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Gimnasio.png" alt="Gimnasio" class="gallery-img">
+                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Gimnasio.webp" alt="Gimnasio" class="gallery-img" loading="lazy">
                     </div>
                     <div class="gallery-card">
-                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Sala_de_proyeccion.png" alt="Sala de proyección" class="gallery-img">
+                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Sala_de_proyeccion.webp" alt="Sala de proyección" class="gallery-img" loading="lazy">
                     </div>
                     <div class="gallery-card">
-                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Hamaqueros.png" alt="Hamaqueros" class="gallery-img">
+                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Hamaqueros.webp" alt="Hamaqueros" class="gallery-img" loading="lazy">
                     </div>
                     <div class="gallery-card">
-                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Biblioteca.png" alt="Biblioteca" class="gallery-img">
+                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Biblioteca.webp" alt="Biblioteca" class="gallery-img" loading="lazy">
                     </div>
                     <div class="gallery-card">
-                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Fogateros.png" alt="Fogateros" class="gallery-img">
+                        <img src="SECCIONES/PROYECTO/IMAGENES/Saggita_Galeria_Proyecto_ Fogateros.webp" alt="Fogateros" class="gallery-img" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -226,7 +226,7 @@
         <div class="map-wrapper" id="map-wrapper">
             <div class="map-zoom-container" id="map-zoom-container">
                 <div class="map-rotation-wrapper">
-                <img src="SECCIONES/PROYECTO/MASTERPLAN/LOTIFICACION_Saggita.png" class="base-map-img" alt="Master Plan Saggita">
+                <img src="SECCIONES/PROYECTO/MASTERPLAN/LOTIFICACION_Saggita.webp" class="base-map-img" alt="Master Plan Saggita" loading="lazy">
                 <svg class="interactive-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1312 2416">
 <path id="SAG1-M1" d="M185.93,1903.15l218.89,114.38s-25.19,103.15-28.94,111.66-15.66,22.13-52.43,14.98-135.4-50.47-135.4-50.47c0,0-5.19-174.3-5.19-178.85s3.06-11.7,3.06-11.7Z" class="lote-interactivo"/>
 <path id="SAG1-M3" d="M409.24,1933.57s27.74,15.49,31.32,17.53c3.57,2.04,2.21,10.89-4.77,34.89-6.98,24-11.74,39.66-11.74,39.66l-50.56-24.5,35.75-67.59Z" class="lote-interactivo"/>
@@ -543,7 +543,7 @@
     <div id="tooltip">
         <button class="tt-close-btn" id="tt-close"><i class="fa-solid fa-xmark"></i></button>
         <div class="tt-logo-container">
-            <img src="LOGOS/Logotipo_Grupo_DRT.png" alt="Grupo DRT Logo" class="tt-logo">
+            <img src="LOGOS/Logotipo_Grupo_DRT.webp" alt="Grupo DRT Logo" class="tt-logo">
         </div>
         <div class="tt-title" id="tt-title">Unidad</div>
         <div class="tt-desc" id="tt-desc">Info</div>
@@ -588,7 +588,7 @@
                 <!-- Card 1 -->
                 <div class="proto-card">
                     <div class="proto-img-mask">
-                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Alberca.png" alt="Saggita Alberca" class="proto-img">
+                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Alberca.webp" alt="Saggita Alberca" class="proto-img" loading="lazy">
                     </div>
                     <div class="proto-info">
                         <div class="proto-title-row">
@@ -602,7 +602,7 @@
                 <!-- Card 2 -->
                 <div class="proto-card">
                     <div class="proto-img-mask">
-                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Biblioteca.png" alt="Saggita Biblioteca" class="proto-img">
+                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Biblioteca.webp" alt="Saggita Biblioteca" class="proto-img" loading="lazy">
                     </div>
                     <div class="proto-info">
                         <div class="proto-title-row">
@@ -616,7 +616,7 @@
                 <!-- Card 3 -->
                 <div class="proto-card">
                     <div class="proto-img-mask">
-                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Casa_club.png" alt="Saggita Casa Club" class="proto-img">
+                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Casa_club.webp" alt="Saggita Casa Club" class="proto-img" loading="lazy">
                     </div>
                     <div class="proto-info">
                         <div class="proto-title-row">
@@ -630,7 +630,7 @@
                 <!-- Card 4 -->
                 <div class="proto-card">
                     <div class="proto-img-mask">
-                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Fogateros.png" alt="Saggita Fogateros" class="proto-img">
+                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Fogateros.webp" alt="Saggita Fogateros" class="proto-img" loading="lazy">
                     </div>
                     <div class="proto-info">
                         <div class="proto-title-row">
@@ -644,7 +644,7 @@
                 <!-- Card 5 -->
                 <div class="proto-card">
                     <div class="proto-img-mask">
-                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Gimnasio.png" alt="Saggita Gimnasio" class="proto-img">
+                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Gimnasio.webp" alt="Saggita Gimnasio" class="proto-img" loading="lazy">
                     </div>
                     <div class="proto-info">
                         <div class="proto-title-row">
@@ -658,7 +658,7 @@
                 <!-- Card 6 -->
                 <div class="proto-card">
                     <div class="proto-img-mask">
-                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Hamaqueros.png" alt="Saggita Hamaqueros" class="proto-img">
+                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Hamaqueros.webp" alt="Saggita Hamaqueros" class="proto-img" loading="lazy">
                     </div>
                     <div class="proto-info">
                         <div class="proto-title-row">
@@ -672,7 +672,7 @@
                 <!-- Card 7 -->
                 <div class="proto-card">
                     <div class="proto-img-mask">
-                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Sala_de_proyeccion.png" alt="Saggita Sala de Proyección" class="proto-img">
+                        <img src="SECCIONES/PROTOTIPOS/IMAGENES/Saggita_Residencial_Exterior_Sala_de_proyeccion.webp" alt="Saggita Sala de Proyección" class="proto-img" loading="lazy">
                     </div>
                     <div class="proto-info">
                         <div class="proto-title-row">
@@ -755,7 +755,7 @@
                 <div class="floorplan-col" style="background: #FDFDFD; border: 1px solid rgba(53, 78, 60, 0.1); border-radius: 16px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
                     <h4 style="color: #354E3C; font-weight: 800; font-size: 1.8rem; margin-bottom: 25px; border-bottom: 2px solid #96B563; padding-bottom: 10px; display: inline-block;">PLANTA BAJA</h4>
                     <div class="zoom-explore">
-                        <img src="SECCIONES/PROTOTIPOS/GALERIA/FINAL_PALMYRA_PLANTA_BAJA.png" alt="Planta Baja Palmyra">
+                        <img src="SECCIONES/PROTOTIPOS/GALERIA/FINAL_PALMYRA_PLANTA_BAJA.webp" alt="Planta Baja Palmyra" loading="lazy">
                         <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Explora el plano</span>
                     </div>
                     <ul style="list-style: none; padding: 0; margin: 0; text-align: left; display: flex; flex-direction: column; gap: 12px;">
@@ -775,7 +775,7 @@
                 <div class="floorplan-col" style="background: #FDFDFD; border: 1px solid rgba(53, 78, 60, 0.1); border-radius: 16px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
                     <h4 style="color: #354E3C; font-weight: 800; font-size: 1.8rem; margin-bottom: 25px; border-bottom: 2px solid #96B563; padding-bottom: 10px; display: inline-block;">PLANTA ALTA</h4>
                     <div class="zoom-explore">
-                        <img src="SECCIONES/PROTOTIPOS/GALERIA/FINAL_PALMYRA_PLANTA_ALTA.png" alt="Planta Alta Palmyra">
+                        <img src="SECCIONES/PROTOTIPOS/GALERIA/FINAL_PALMYRA_PLANTA_ALTA.webp" alt="Planta Alta Palmyra" loading="lazy">
                         <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Explora el plano</span>
                     </div>
                     <ul style="list-style: none; padding: 0; margin: 0; text-align: left; display: flex; flex-direction: column; gap: 12px;">
@@ -789,14 +789,14 @@
 
             <!-- Logo de cierre -->
             <div style="text-align: center; margin-top: 60px; opacity: 0.8;">
-                <img src="LOGOS/LOGO SAGGITA_png19jul.png" alt="Saggita Logo" style="width: 150px; height: auto;">
+                <img src="LOGOS/LOGO SAGGITA_png19jul.webp" alt="Saggita Logo" style="width: 150px; height: auto;" loading="lazy">
             </div>
         </div>
         
         <div id="tooltip">
             <button class="tt-close-btn" id="tt-close"><i class="fa-solid fa-xmark"></i></button>
             <div class="tt-logo-container">
-                <img src="LOGOS/Logotipo_Grupo_DRT.png" alt="Grupo DRT Logo" class="tt-logo">
+                <img src="LOGOS/Logotipo_Grupo_DRT.webp" alt="Grupo DRT Logo" class="tt-logo">
             </div>
             <div class="tt-title" id="tt-title">Unidad</div>
             <div class="tt-desc" id="tt-desc">Info</div>
@@ -825,7 +825,7 @@
                     <!-- Row 1: Image Left, Text Right -->
                     <div class="place-row">
                         <div class="place-img-wrapper">
-                            <img src="SECCIONES/UBICACION/IMAGENES/Arcos_Acueducto_Queretaro_Centro_Historico.png" alt="Centro Histórico" class="place-img">
+                            <img src="SECCIONES/UBICACION/IMAGENES/Arcos_Acueducto_Queretaro_Centro_Historico.webp" alt="Centro Histórico" class="place-img" loading="lazy">
                         </div>
                         <div class="place-info">
                             <i class="fa-solid fa-car place-icon car-icon"></i>
@@ -846,14 +846,14 @@
                             <i class="fa-solid fa-person-walking place-icon"></i>
                         </div>
                         <div class="place-img-wrapper">
-                            <img src="SECCIONES/UBICACION/IMAGENES/Centro_Comercial_Paseo_Queretaro.png" alt="Paseo Querétaro" class="place-img">
+                            <img src="SECCIONES/UBICACION/IMAGENES/Centro_Comercial_Paseo_Queretaro.webp" alt="Paseo Querétaro" class="place-img" loading="lazy">
                         </div>
                     </div>
 
                     <!-- Row 3: Image Left, Text Right -->
                     <div class="place-row">
                         <div class="place-img-wrapper large-img">
-                            <img src="SECCIONES/UBICACION/IMAGENES/Universidad_Anahuac_Queretaro.png" alt="Universidad Anahuac" class="place-img">
+                            <img src="SECCIONES/UBICACION/IMAGENES/Universidad_Anahuac_Queretaro.webp" alt="Universidad Anahuac" class="place-img" loading="lazy">
                         </div>
                         <div class="place-info">
                             <i class="fa-solid fa-car place-icon car-icon"></i>
@@ -874,7 +874,7 @@
                             <i class="fa-solid fa-car place-icon car-icon"></i>
                         </div>
                         <div class="place-img-wrapper">
-                            <img src="SECCIONES/UBICACION/IMAGENES/Aeropuerto_Internacional_Queretaro.png" alt="Aeropuerto Internacional" class="place-img">
+                            <img src="SECCIONES/UBICACION/IMAGENES/Aeropuerto_Internacional_Queretaro.webp" alt="Aeropuerto Internacional" class="place-img" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -883,7 +883,8 @@
                 <div class="ubicacion-map-col">
                     <a href="https://maps.app.goo.gl/2v8HKCiwmbEMB62f8" target="_blank" class="map-outer" style="display: block; position: relative; text-decoration: none;">
                         <div class="map-inner" style="pointer-events: none;">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.5644729111!2d-100.3251106!3d20.6599503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35dc0223facfb%3A0xb9bcad6b95e7ecb1!2sSaggita%20Residencial!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <!-- Mapa lazy: carga solo cuando la sección es visible -->
+                            <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.5644729111!2d-100.3251106!3d20.6599503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35dc0223facfb%3A0xb9bcad6b95e7ecb1!2sSaggita%20Residencial!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); background: #0082BA; color: #FFFFFF; padding: 14px 28px; border-radius: 30px; font-weight: 700; font-size: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 12px; transition: background 0.3s;" onmouseover="this.style.background='#1C3775'" onmouseout="this.style.background='#0082BA'">
                             <i class="fa-solid fa-location-dot"></i> Abrir en Google Maps
@@ -922,7 +923,7 @@
 
             <div class="contacto-right">
                 <div class="contacto-form-glass">
-                    <img src="LOGOS/LOGO SAGGITA_png19jul.png" alt="Saggita Logo" class="contacto-logo" style="width: 100px; filter: brightness(0) invert(1);">
+                    <img src="LOGOS/LOGO SAGGITA_png19jul.webp" alt="Saggita Logo" class="contacto-logo" style="width: 100px; filter: brightness(0) invert(1);" loading="lazy">
                     <form action="#" method="POST" class="contacto-form">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Nombre completo" required>
